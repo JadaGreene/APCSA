@@ -34,6 +34,30 @@ public class HotelRoom {
             guestTwo = null;
         }
     }
+
+    int checkCapacity(){
+        int x = 0;
+        if(guestOne == null && guestTwo == null){
+             x = 0;
+        }
+        else if(guestOne == null || guestTwo == null){
+            x = 1;
+        }
+        else{
+            x = 2;
+        }
+        return(x);
+         }
+
+         void printGuestInfo(){
+            if(guestOne != null){
+                System.out.println(guestOne.name + " , " + guestOne.age + " , " + guestOne.height + " , " + guestOne.hairColor);
+            if(guestTwo != null){
+                System.out.println(guestTwo.name + " , " + guestTwo.age + " , " + guestTwo.height + " , " + guestTwo.hairColor);
+            }
+    }
+    
+    }
 }
 //to compile - javac filename
 //to run - java mainclassname

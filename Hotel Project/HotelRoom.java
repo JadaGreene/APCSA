@@ -15,7 +15,7 @@ public class HotelRoom {
         }
         else if(guestTwo == null){
             guestTwo = guest;
-            roomNumber = 1;
+            roomNumber = 2;
             System.out.println(guestTwo + " checked into room " + roomNumber);
         }
         else if(guestOne != null && guestTwo != null){

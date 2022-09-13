@@ -246,8 +246,8 @@ public class hotelTests {
             HotelRoom room_one = new HotelRoom(3);
 
             // constructor test
-            if(!properAttributes(person_one, 5.7, 16, "George", "Brown") || 
-            !properAttributes(person_two, 3.4, 34, "Joe", "Purple") || 
+            if(!properAttributes(person_one, 196, 17, "leo", "red") || 
+            !properAttributes(person_two, 194, 18, "geo", "brown") || 
             !properAttributes(room_one, 3)){
                 failure = true;
             }
